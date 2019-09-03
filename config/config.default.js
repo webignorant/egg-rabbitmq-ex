@@ -5,7 +5,7 @@
  * @member Config#rabbitmqNode
  * @property {String} SOME_KEY - some description
  */
-exports.rabbitmqNode = {
+exports.rabbitmq = {
   // Type[RabbitmqType]
   type: 'all',
   // Multi Instances

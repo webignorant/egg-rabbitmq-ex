@@ -49,12 +49,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eggjs/egg-rabbitmq-node.git"
+    "url": "git+https://github.com/eggjs/egg-rabbitmq-ex.git"
   },
   "bugs": {
     "url": "https://github.com/eggjs/egg/issues"
   },
-  "homepage": "https://github.com/eggjs/egg-rabbitmq-node#readme",
+  "homepage": "https://github.com/eggjs/egg-rabbitmq-ex#readme",
   "author": "",
   "license": "MIT"
 }

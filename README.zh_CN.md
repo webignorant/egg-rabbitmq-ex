@@ -49,7 +49,7 @@ egg-rabbitmq-ex 版本 | egg 2.x
 
 ```js
 // config/plugin.js
-exports.rabbitmqNode = {
+exports.rabbitmq = {
   enable: true,
   package: 'egg-rabbitmq-ex',
 };
