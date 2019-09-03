@@ -1,6 +1,6 @@
 {
   "name": "egg-rabbitmq-ex",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "ex rabbitmq plugin for egg.js",
   "eggPlugin": {
     "name": "rabbitmq"
@@ -39,10 +39,11 @@
     "autod": "autod"
   },
   "files": [
+    "config",
+    "lib",
     "app.js",
     "agent.js",
-    "config",
-    "app"
+    "index.d.ts"
   ],
   "ci": {
     "version": "8, 10"
