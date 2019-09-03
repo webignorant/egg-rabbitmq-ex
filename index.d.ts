@@ -38,7 +38,7 @@ declare module 'egg' {
       password?: string,
       locale?: string,
     };
-    exchange: {
+    exchange?: {
       name: string,
       type: string,
       options: {
@@ -46,7 +46,7 @@ declare module 'egg' {
       },
       deadLetterExchange: string,
     };
-    bindings: RabbitmqBinding[];
+    bindings?: RabbitmqBinding[];
   }
 
   interface Application {
@@ -55,10 +55,8 @@ declare module 'egg' {
 
   interface EggAppConfig {
     rabbitmq: {
-      type: RabbitmqType | string,
-      clients?: {
-        [key: string]: RabbitmqClient;
-      },
+      type?: RabbitmqType | string,
+      clients?: Record<string, RabbitmqClient>,
     };
   }
 }
