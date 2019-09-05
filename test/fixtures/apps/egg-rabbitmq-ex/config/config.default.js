@@ -3,8 +3,10 @@
 exports.keys = '123456';
 
 exports.rabbitmq = {
-  // Type[RabbitmqType]
-  type: 'agenter',
+  // only run in agenter
+  agent: true,
+  // not run in all worker
+  app: false,
   // Multi Instances
   clients: {
     instance1: {

@@ -6,8 +6,9 @@
  * @property {String} SOME_KEY - some description
  */
 exports.rabbitmq = {
-  // Type[RabbitmqType]
-  type: 'all',
+  // exec on agent or app
+  agent: true,
+  app: false,
   // Multi Instances
   // clients: {
   //   instance1: {

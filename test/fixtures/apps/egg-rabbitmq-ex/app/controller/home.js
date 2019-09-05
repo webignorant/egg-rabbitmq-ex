@@ -4,7 +4,9 @@ const Controller = require('egg').Controller;
 
 class HomeController extends Controller {
   async index() {
-    this.ctx.body = 'hi, ' + this.app.plugins.rabbitmq.name;
+    const { ctx } = this;
+
+    ctx.body = 'hi, ' + ctx.app.plugins.rabbitmq.name;
   }
 }
 

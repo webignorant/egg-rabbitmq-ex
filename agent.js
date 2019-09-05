@@ -3,7 +3,7 @@
 const { createRabbitMQ } = require('./lib/instance');
 
 module.exports = agent => {
-  if (agent.config.rabbitmq && (agent.config.rabbitmq.type === 'all' || agent.config.rabbitmq.type === 'agenter')) {
+  if (agent.config.redis.agent) {
     agent.addSingleton('rabbitmq', createRabbitMQ);
   }
 };

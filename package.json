@@ -1,7 +1,7 @@
 {
   "name": "egg-rabbitmq-ex",
-  "version": "0.1.2",
-  "description": "ex rabbitmq plugin for egg.js",
+  "version": "0.1.3",
+  "description": "rabbitmq plugin ex for egg.js",
   "eggPlugin": {
     "name": "rabbitmq"
   },
