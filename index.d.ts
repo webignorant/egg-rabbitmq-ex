@@ -1,22 +1,6 @@
 import { Channel } from 'amqplib';
 
 declare module 'egg' {
-
-  const enum RabbitmqType {
-    /**
-     * run in agenter with worker
-     */
-    all = 'all',
-    /**
-     * only run in agenter
-     */
-    agenter = 'agenter',
-    /**
-     * only run in all worker
-     */
-    worker = 'worker',
-  }
-
   interface RabbitmqBinding {
     queue: string;
     key: string;
@@ -50,12 +34,13 @@ declare module 'egg' {
   }
 
   interface Application {
-    rabbitmq: typeof Channel;
+    rabbitmq: Channel;
   }
 
   interface EggAppConfig {
     rabbitmq: {
-      type?: RabbitmqType | string,
+      agent?: boolean,
+      app?: boolean,
       clients?: Record<string, RabbitmqClient>,
     };
   }
